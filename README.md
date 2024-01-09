@@ -7,22 +7,22 @@
 - Blogpost: [Introducing Namada: Interchain Asset-agnostic Privacy](https://namada.net/blog/introducing-namada-interchain-asset-agnostic-privacy)
 - Resources: [Website](https://namada.net/) // [Twitter](https://x.com/namada) // [Discord](https://discord.com/invite/namada) // [GitHub](https://github.com/anoma/namada) // [Docs](https://docs.namada.net/)
 
-## Installing
+## Installation
 
 ### script execution
 
-Use this script to install node:
+Use the following script to install the node:
 ```
 wget -O namada.sh https://api.denodes.xyz/namada.sh && bash namada.sh
 ```
 
-After installation, you need to wait for full synchronization. The following command should return "false":
+After installation, wait for full synchronization. The command below should return `false`:
 ```
 curl -s localhost:26657/status | jq .result.sync_info.catching_up
 ```
 ### wallet & faucet
 
-Next, generate a wallet and display it address:
+Next, proceed to create a wallet and show its address:
 ```
 source $HOME/.bash_profile
 ```
@@ -33,8 +33,8 @@ namada wallet address gen --alias $NAMADA_WALLET
 namada wallet address find --alias my-account
 ```
 
-Request tokens from the [faucet](https://faucet.heliax.click/) for this address.
-Then check balance:
+Request test tokens from the [Faucet](https://faucet.heliax.click/) for this address.
+Then, check your balance:
 ```
 namada client balance --token NAM --owner $NAMADA_WALLET
 ```
@@ -52,7 +52,7 @@ namada client init-validator \
   --max-commission-rate-change 0.05
 ```
 
-Bond token to your validator:
+Bond test token to your validator:
 ```
 namada client bond \
   --validator $NAMADA_ALIAS \
