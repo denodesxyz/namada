@@ -9,6 +9,13 @@
 
 ## Installation
 
+### prerequisite
+
+- Memory: **16GB**
+- CPU: **4 Cores**
+- Disk: **1 TB***
+- Machine: **Ubuntu 22.04.3**
+
 ### script execution
 
 Use the following script to install the node:
