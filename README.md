@@ -67,6 +67,17 @@ namada client bond \
   --source $NAMADA_WALLET
 ```
 
+## Deleting your node
+
+```
+systemctl stop namadad
+systemctl disable namadad
+rm /etc/systemd/system/namadad.service
+rm -rf $HOME/.local/share/namada
+rm /usr/local/bin/cometbft
+rm /usr/local/bin/namada*
+```
+
 ## Useful Commands
 
 Here are some handy commands:
