@@ -73,7 +73,7 @@ Here are some handy commands:
 
 - Check logs: `sudo journalctl -u namadad -f`
 - Restart your node: `sudo systemctl restart namadad`
-- Check a wallet balance: `namada client balance --token NAM --owner $NAMADA_WALLET/`
+- Check a wallet balance: `namada client balance --token NAM --owner $NAMADA_WALLET`
 - Check sync status: `curl -s localhost:26657/status | jq .result.sync_info.catching_up`
 
 ## Deleting Your Node
