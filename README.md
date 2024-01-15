@@ -37,7 +37,7 @@ source $HOME/.bash_profile
 namada wallet address gen --alias $NAMADA_WALLET
 ```
 ```
-namada wallet address find --alias my-account
+namada wallet address find --alias $NAMADA_WALLET
 ```
 
 Request test tokens from the [Faucet](https://faucet.heliax.click/) for this address.
