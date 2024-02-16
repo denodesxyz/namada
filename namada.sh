@@ -50,7 +50,7 @@ echo "export NAMADA_WALLET="$NAMADA_WALLET"" >> $HOME/.bash_profile
 echo "export EMAIL="$EMAIL"" >> $HOME/.bash_profile
 echo "export PUBLIC_IP=$(wget -qO- eth0.me)" >> $HOME/.bash_profile
 echo "export TM_HASH="v0.1.4-abciplus"" >> $HOME/.bash_profile
-echo "export CHAIN_ID="public-testnet-15.0dacadb8d663"" >> $HOME/.bash_profile
+echo "export CHAIN_ID="shielded-expedition.88f17d1d14"" >> $HOME/.bash_profile
 echo "export BASE_DIR="$HOME/.local/share/namada"" >> $HOME/.bash_profile
 source $HOME/.bash_profile
 
@@ -66,7 +66,7 @@ rm -rf ./cometbft
 
 mkdir -p $HOME/namada && cd $HOME/namada
 #wget -O namada.tar.gz "$(curl -s "https://api.github.com/repos/anoma/namada/releases/latest" | grep "browser_download_url" | cut -d '"' -f 4 | grep "Linux")"
-wget -O namada.tar.gz https://github.com/anoma/namada/releases/download/v0.28.2/namada-v0.28.2-Linux-x86_64.tar.gz
+wget -O namada.tar.gz https://github.com/anoma/namada/releases/download/v0.31.4/namada-v0.31.4-Linux-x86_64.tar.gz
 tar -xzvf namada*.tar.gz --strip-components 1
 cp ./namada* /usr/local/bin/
 cd $HOME
