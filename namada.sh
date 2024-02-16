@@ -18,9 +18,8 @@ echo ""
 PS3=$'\nPlease select an option from the list provided: '
 
 options=(
-"Run a Node (Public Testnet-15)"
+"Run a Node (Shielded Expedition)"
 "Run a Node (Campfire Testnet)"
-"Shielded Expedition (Soon. Stay tuned!)"
 "Namada Monitoring Tool"
 "Exit"
 )
@@ -29,7 +28,7 @@ select opt in "${options[@]}"
 do
 case $opt in
 
-"Run a Node (Public Testnet-15)")
+"Run a Node (Shielded Expedition)")
 
 touch $HOME/.bash_profile
 source $HOME/.bash_profile
@@ -108,13 +107,6 @@ exit
 ;;
 
 "Run a Node (Campfire Testnet)")
-echo -e "\n${RED}"
-echo -e "This network is currently not available. Please select another network. Thank you!"
-echo -e "${NOCOLOR}"
-break
-;;
-
-"Shielded Expedition (Soon. Stay tuned!)")
 echo -e "\n${RED}"
 echo -e "This network is currently not available. Please select another network. Thank you!"
 echo -e "${NOCOLOR}"
